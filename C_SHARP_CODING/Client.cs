@@ -34,5 +34,19 @@ namespace C_SHARP_CODING
                 return FirstName + " " + LastName;
             }
         }
+
+        public bool validate()
+        {
+            var valid = true;
+
+            if (string.IsNullOrEmpty(LastName)) {
+                valid = false;
+            }
+            if (string.IsNullOrEmpty(Email))
+            {
+                valid = false;
+            }
+            return valid;
+        }
     }
 }
