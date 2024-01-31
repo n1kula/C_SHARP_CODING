@@ -44,11 +44,16 @@ namespace UnitTests
             client.Email = "emial@email.com";
             var expectedResult = false;
 
+            var client2 = new Client(100);
+            client2.Email = "emial@email.com";
+            var expectedResult2 = false;
+
             //Act
             bool actualResult = client.validate();
-
+            bool actualResult2 = client2.validate();
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult2, actualResult2);
         }
     }
 }
