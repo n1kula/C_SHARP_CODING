@@ -6,22 +6,8 @@ using System.Threading.Tasks;
 
 namespace C_SHARP_CODING
 {
-    public class Order
+    public class OrderRepository
     {
-        public Order()
-        {
-            
-        }
-
-        public Order(int orderId)
-        {
-            this.OrderId = orderId;
-        }
-
-        public int OrderId { get; private set; }
-
-        public DateTimeOffset?  OrderDate { get; set; }
-
         /// <summary>
         /// Save
         /// </summary>
@@ -38,16 +24,15 @@ namespace C_SHARP_CODING
         /// <returns></returns>
         public Order getData(int orderId)
         {
+            //temp
+            Order order = new Order(orderId);
+
+            if (orderId == 3) {
+                order.OrderDate = new DateTimeOffset(2024, 1, 31, 10, 00,00, new TimeSpan(7,0,0));
+               
+            }
             //code to get data of order by id
-            return new Order();
-        }
-
-        public bool validate()
-        {
-            var valid = true;
-
-            if (null == OrderDate) valid = false;
-            return valid;
+            return order;
         }
     }
 }
