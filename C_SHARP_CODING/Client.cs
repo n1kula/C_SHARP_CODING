@@ -48,5 +48,36 @@ namespace C_SHARP_CODING
             }
             return valid;
         }
+
+        /// <summary>
+        /// Save current client
+        /// </summary>
+        /// <returns></returns>
+        public bool Save()
+        {
+            //save client
+            return true;
+        }
+
+        /// <summary>
+        /// Get data of specific client
+        /// </summary>
+        /// <param name="clientId"></param>
+        /// <returns></returns>
+        public Client getData(int clientId)
+        {
+            //code to get data of client by id
+            return new Client();
+        }
+
+        /// <summary>
+        /// Get all clients data
+        /// </summary>
+        /// <returns></returns>
+        public List<Client> getData()
+        {
+            //get all clients
+            return new List<Client>();
+        }
     }
 }
