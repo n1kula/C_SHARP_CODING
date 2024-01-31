@@ -8,12 +8,17 @@ namespace C_SHARP_CODING
 {
     public class Client
     {
-        public Client() { }
+        public Client() : this(0)
+        {
+        }
 
         public Client(int clientId)
         {
             this.ClientId = clientId;
+            AddressList = new List<Address>();
         }
+
+        public List<Address> AddressList { get; set; }
 
         private string _lastName;
 

@@ -8,6 +8,12 @@ namespace C_SHARP_CODING
 {
     public class ClientRepository
     {
+        private AddressRepository addressRepository { get; set; }
+
+        public ClientRepository()
+        {
+            addressRepository = new AddressRepository();
+        }
         /// <summary>
         /// Save current client
         /// </summary>
@@ -26,6 +32,7 @@ namespace C_SHARP_CODING
         public Client getData(int clientId)
         {
             Client client = new Client(clientId);
+            client.AddressList = addressRepository.GetByClientId(clientId).ToList();
             //temp data
             if (clientId == 1)
             {
