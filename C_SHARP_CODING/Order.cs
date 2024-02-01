@@ -20,7 +20,13 @@ namespace C_SHARP_CODING
 
         public int OrderId { get; private set; }
 
-        public DateTimeOffset?  OrderDate { get; set; }
+        public DateTimeOffset? OrderDate { get; set; }
+
+        public List<OrderItem> OrderItems { get; set; }
+
+        public int ClientId { get; set; }
+
+        public int DeliveryAddresID { get; set; }
 
         /// <summary>
         /// Save

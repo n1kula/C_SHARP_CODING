@@ -51,6 +51,8 @@
     <Compile Include="Client.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowOrder.cs" />
+    <Compile Include="ShowOrderItems.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

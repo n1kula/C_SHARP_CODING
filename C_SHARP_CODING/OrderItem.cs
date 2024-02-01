@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_SHARP_CODING
 {
-    internal class OrderItem
+    public class OrderItem
     {
         public OrderItem()
         {
