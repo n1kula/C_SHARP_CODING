@@ -1,4 +1,5 @@
 ﻿using System;
+using Common;
 
 namespace C_SHARP_CODING
 {
@@ -12,7 +13,19 @@ namespace C_SHARP_CODING
         }
 
         public int ProductId { get; private set; }
-        public string ProductName { get; set; }
+        private string _ProductName;
+
+        public string ProductName
+        {
+            get
+            {
+                return StringSupport.AddSpace(_ProductName);
+            }
+            set
+            {
+                _ProductName = value;
+            }
+        }
 
         public Decimal? CurrentPrice { get; set; }
 

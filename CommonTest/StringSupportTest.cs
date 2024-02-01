@@ -13,10 +13,9 @@ namespace CommonTest
             //arrange
             var source = "TestNazwyCammel";
             var expected = "Test Nazwy Cammel";
-            var stringSupport = new StringSupport();
 
             //act
-            var current = stringSupport.AddSpace(source);
+            var current = StringSupport.AddSpace(source);
 
             //assert
             Assert.AreEqual(expected, current);

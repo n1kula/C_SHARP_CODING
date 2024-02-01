@@ -2,9 +2,9 @@
 
 namespace Common
 {
-    public class StringSupport
+    public static class StringSupport
     {
-        public string AddSpace(string str)
+        public static string AddSpace(string str)
         {
             string result = string.Empty;
 

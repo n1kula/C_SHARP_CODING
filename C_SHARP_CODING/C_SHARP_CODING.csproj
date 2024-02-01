@@ -55,5 +55,11 @@
     <Compile Include="ShowOrder.cs" />
     <Compile Include="ShowOrderItems.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{cfbe1a02-26db-48f4-8220-95406c50fe46}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
