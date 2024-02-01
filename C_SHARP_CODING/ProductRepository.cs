@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace C_SHARP_CODING
+﻿namespace C_SHARP_CODING
 {
     public class ProductRepository
     {
@@ -12,9 +6,21 @@ namespace C_SHARP_CODING
         /// Save
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Product product)
         {
-            return true;
+            var succsess = true;
+            if (product.HasChanges && product.DataIsCorrect)
+            {
+                if (product.IsNew)
+                {
+                    //insert
+                }
+                else
+                {
+                    //update
+                }
+            }
+            return succsess;
         }
 
         /// <summary>

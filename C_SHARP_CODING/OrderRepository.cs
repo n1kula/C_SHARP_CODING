@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace C_SHARP_CODING
 {
@@ -12,9 +9,21 @@ namespace C_SHARP_CODING
         /// Save
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Order order)
         {
-            return true;
+            var succsess = true;
+            if (order.HasChanges && order.DataIsCorrect)
+            {
+                if (order.IsNew)
+                {
+                    //insert
+                }
+                else
+                {
+                    //update
+                }
+            }
+            return succsess;
         }
 
         /// <summary>

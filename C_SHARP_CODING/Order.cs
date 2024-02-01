@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace C_SHARP_CODING
 {
-    public class Order
+    public class Order : BaseClass
     {
         public Order()
         {
@@ -48,7 +45,7 @@ namespace C_SHARP_CODING
             return new Order();
         }
 
-        public bool validate()
+        public override bool validate()
         {
             var valid = true;
 

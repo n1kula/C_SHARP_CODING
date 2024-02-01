@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace C_SHARP_CODING
 {
@@ -18,10 +15,21 @@ namespace C_SHARP_CODING
         /// Save current client
         /// </summary>
         /// <returns></returns>
-        public bool Save()
+        public bool Save(Client client)
         {
-            //save client
-            return true;
+            var succsess = true;
+            if (client.HasChanges && client.DataIsCorrect)
+            {
+                if (client.IsNew)
+                {
+                    //insert
+                }
+                else
+                {
+                    //update
+                }
+            }
+            return succsess;
         }
 
         /// <summary>

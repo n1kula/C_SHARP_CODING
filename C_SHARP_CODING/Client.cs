@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace C_SHARP_CODING
 {
-    public class Client
+    public class Client : BaseClass
     {
         public Client() : this(0)
         {
@@ -49,7 +45,7 @@ namespace C_SHARP_CODING
 
         public int ClientType { get; set; }
 
-        public bool validate()
+        public override bool validate()
         {
             var valid = true;
 
