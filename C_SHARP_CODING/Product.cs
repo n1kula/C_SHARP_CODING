@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_SHARP_CODING
 {
-    public class Product
+    public class Product : BaseClass
     {
         public Product() { }
 
@@ -46,7 +46,7 @@ namespace C_SHARP_CODING
         /// Check product data
         /// </summary>
         /// <returns></returns>
-        public bool validate()
+        public override bool validate()
         {
             var valid = true;
 

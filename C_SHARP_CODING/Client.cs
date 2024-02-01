@@ -47,6 +47,8 @@ namespace C_SHARP_CODING
             }
         }
 
+        public int ClientType { get; set; }
+
         public bool validate()
         {
             var valid = true;
